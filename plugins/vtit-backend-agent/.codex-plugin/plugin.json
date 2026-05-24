@@ -1,0 +1,25 @@
+{
+  "name": "vtit-backend-agent",
+  "version": "0.1.0",
+  "description": "Project-specific agent harness for building the VTIT Spring Boot backend safely.",
+  "author": {
+    "name": "VTIT project owner"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VTIT Backend Agent",
+    "shortDescription": "Harness for VTIT backend implementation.",
+    "longDescription": "Guides AI agents to implement the VTIT crime-report dispatch backend using Spring Boot, PostgreSQL/PostGIS, Redis, MinIO, strict security, permission, concurrency, and review gates.",
+    "developerName": "VTIT project owner",
+    "category": "Developer Tools",
+    "capabilities": [
+      "backend-architecture",
+      "spring-boot",
+      "security-review",
+      "database-design",
+      "concurrency-review",
+      "issue-execution"
+    ],
+    "defaultPrompt": "Use the VTIT Backend Agent skill. Read the project harness and implement only the assigned backend issue."
+  }
+}

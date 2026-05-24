@@ -1,0 +1,7 @@
+node_modules/
+npm-debug.log*
+*.tgz
+.DS_Store
+docs/discussion_about_the_project.md
+docs_other_projects_for _reference_only/
+ENEEDAUTH

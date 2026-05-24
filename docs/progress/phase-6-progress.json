@@ -1,0 +1,16 @@
+{
+  "phase": 6,
+  "name": "Staff Workflow",
+  "status": "pending",
+  "last_updated": null,
+  "tasks": [
+    { "id": "TASK-P6-A1", "status": "pending", "depends_on": ["PHASE-5"] },
+    { "id": "TASK-P6-A2", "status": "pending", "depends_on": ["TASK-P6-A1"] },
+    { "id": "TASK-P6-A3", "status": "pending", "depends_on": ["TASK-P6-A2"] },
+    { "id": "TASK-P6-A4", "status": "pending", "depends_on": ["TASK-P6-A2"] },
+    { "id": "TASK-P6-A5", "status": "pending", "depends_on": ["TASK-P6-A4"] },
+    { "id": "TASK-P6-A6", "status": "pending", "depends_on": ["TASK-P6-A4"] }
+  ],
+  "gates_passed": [],
+  "issues": []
+}

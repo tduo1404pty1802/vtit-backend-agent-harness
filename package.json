@@ -1,0 +1,57 @@
+{
+  "name": "@tduo1404pty1802/vtit-backend-agent-harness",
+  "version": "0.1.0",
+  "description": "AI-agent harness and documentation for the VTIT Spring Boot backend project.",
+  "license": "MIT",
+  "author": "VTIT project owner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tduo1404pty1802/vtit-backend-agent-harness.git"
+  },
+  "homepage": "https://github.com/tduo1404pty1802/vtit-backend-agent-harness#readme",
+  "bugs": {
+    "url": "https://github.com/tduo1404pty1802/vtit-backend-agent-harness/issues"
+  },
+  "type": "commonjs",
+  "packageManager": "pnpm@11.1.3",
+  "bin": {
+    "vtit-harness": "bin/vtit-harness.js"
+  },
+  "files": [
+    "AGENTS.md",
+    "docs/README.md",
+    "docs/[0-9][0-9]-*.md",
+    "docs/adr/**",
+    "docs/harness/**",
+    "docs/project/**",
+    "docs/phases/**",
+    "docs/progress/**",
+    "docs/publishing/**",
+    "agent-store/**",
+    "plugins/**",
+    "bin/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai-agent",
+    "harness-engineering",
+    "codex",
+    "spring-boot",
+    "backend",
+    "documentation",
+    "agent-plugin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "pack:dry-run": "npm pack --dry-run",
+    "publish:dry-run": "npm publish --dry-run --access public",
+    "publish:public": "npm publish --access public",
+    "check:json": "node -e \"const fs=require('fs'); for (const f of ['package.json','agent-store/marketplace.json','plugins/vtit-backend-agent/.codex-plugin/plugin.json']) JSON.parse(fs.readFileSync(f,'utf8'))\""
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

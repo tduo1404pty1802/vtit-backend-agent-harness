@@ -1,0 +1,15 @@
+{
+  "phase": 2,
+  "name": "Citizen Report Intake",
+  "status": "pending",
+  "last_updated": null,
+  "tasks": [
+    { "id": "TASK-P2-A1", "status": "pending", "depends_on": ["PHASE-1"] },
+    { "id": "TASK-P2-A2", "status": "pending", "depends_on": ["TASK-P2-A1"] },
+    { "id": "TASK-P2-A3", "status": "pending", "depends_on": ["TASK-P2-A2"] },
+    { "id": "TASK-P2-A4", "status": "pending", "depends_on": ["TASK-P2-A3"] },
+    { "id": "TASK-P2-A5", "status": "pending", "depends_on": ["TASK-P2-A3"] }
+  ],
+  "gates_passed": [],
+  "issues": []
+}

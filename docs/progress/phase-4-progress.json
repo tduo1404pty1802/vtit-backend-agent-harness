@@ -1,0 +1,16 @@
+{
+  "phase": 4,
+  "name": "Urgency Scoring",
+  "status": "pending",
+  "last_updated": null,
+  "tasks": [
+    { "id": "TASK-P4-A1", "status": "pending", "depends_on": ["PHASE-1"] },
+    { "id": "TASK-P4-A2", "status": "pending", "depends_on": ["TASK-P4-A1"] },
+    { "id": "TASK-P4-A3", "status": "pending", "depends_on": ["TASK-P4-A2"] },
+    { "id": "TASK-P4-A4", "status": "pending", "depends_on": ["TASK-P4-A3"] },
+    { "id": "TASK-P4-A5", "status": "pending", "depends_on": ["TASK-P4-A4"] },
+    { "id": "TASK-P4-A6", "status": "pending", "depends_on": ["TASK-P4-A5", "PHASE-3"] }
+  ],
+  "gates_passed": [],
+  "issues": []
+}

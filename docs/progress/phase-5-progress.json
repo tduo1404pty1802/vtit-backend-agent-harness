@@ -1,0 +1,16 @@
+{
+  "phase": 5,
+  "name": "Dispatch Matrix And Case Locking",
+  "status": "pending",
+  "last_updated": null,
+  "tasks": [
+    { "id": "TASK-P5-A1", "status": "pending", "depends_on": ["PHASE-1"] },
+    { "id": "TASK-P5-A2", "status": "pending", "depends_on": ["TASK-P5-A1"] },
+    { "id": "TASK-P5-A3", "status": "pending", "depends_on": ["TASK-P5-A2", "PHASE-4"] },
+    { "id": "TASK-P5-A4", "status": "pending", "depends_on": ["TASK-P5-A3"] },
+    { "id": "TASK-P5-A5", "status": "pending", "depends_on": ["PHASE-3"] },
+    { "id": "TASK-P5-A6", "status": "pending", "depends_on": ["TASK-P5-A5", "TASK-P5-A3"] }
+  ],
+  "gates_passed": [],
+  "issues": []
+}

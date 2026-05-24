@@ -1,0 +1,15 @@
+{
+  "phase": 7,
+  "name": "Command Dashboard And Analytics",
+  "status": "pending",
+  "last_updated": null,
+  "tasks": [
+    { "id": "TASK-P7-A1", "status": "pending", "depends_on": ["PHASE-6"] },
+    { "id": "TASK-P7-A2", "status": "pending", "depends_on": ["TASK-P7-A1"] },
+    { "id": "TASK-P7-A3", "status": "pending", "depends_on": ["TASK-P7-A2"] },
+    { "id": "TASK-P7-A4", "status": "pending", "depends_on": ["TASK-P7-A3"] },
+    { "id": "TASK-P7-A5", "status": "pending", "depends_on": ["TASK-P7-A4"] }
+  ],
+  "gates_passed": [],
+  "issues": []
+}
