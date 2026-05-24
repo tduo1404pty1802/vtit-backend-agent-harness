@@ -7,13 +7,13 @@ This package is not application code. It provides project specifications, phase 
 ## Install
 
 ```bash
-npm install @tduo1404pty1802/vtit-backend-agent-harness
+npm install @duongchau/vtit-backend-agent-harness
 ```
 
 Or initialize the harness directly in a project:
 
 ```bash
-npx @tduo1404pty1802/vtit-backend-agent-harness init
+npx @duongchau/vtit-backend-agent-harness init
 ```
 
 ## What Gets Installed

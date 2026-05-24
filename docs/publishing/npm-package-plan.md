@@ -25,21 +25,21 @@ bin/
 For public npm registry:
 
 ```text
-@tduo1404pty1802/vtit-backend-agent-harness
-@tduo1404pty1802/vtit-agent-docs
+@duongchau/vtit-backend-agent-harness
+@duongchau/vtit-agent-docs
 ```
 
 For GitHub Packages, the package must be scoped to the GitHub owner/organization:
 
 ```text
-@tduo1404pty1802/vtit-backend-agent-harness
+@duongchau/vtit-backend-agent-harness
 ```
 
 ## `package.json` Fields To Include
 
 ```json
 {
-  "name": "@tduo1404pty1802/vtit-backend-agent-harness",
+  "name": "@duongchau/vtit-backend-agent-harness",
   "version": "0.1.0",
   "description": "AI-agent harness and documentation for the VTIT Spring Boot backend project.",
   "license": "MIT",
@@ -78,7 +78,7 @@ Use `files` to publish only the harness and avoid accidentally packaging referen
 ### Option A - Install As Dependency
 
 ```bash
-npm install @tduo1404pty1802/vtit-backend-agent-harness
+npm install @duongchau/vtit-backend-agent-harness
 ```
 
 Then users copy docs from `node_modules`.
@@ -86,19 +86,19 @@ Then users copy docs from `node_modules`.
 pnpm equivalent:
 
 ```bash
-pnpm add @tduo1404pty1802/vtit-backend-agent-harness
+pnpm add @duongchau/vtit-backend-agent-harness
 ```
 
 ### Option B - CLI Copy Command
 
 ```bash
-npx @tduo1404pty1802/vtit-backend-agent-harness init
+npx @duongchau/vtit-backend-agent-harness init
 ```
 
 pnpm equivalent:
 
 ```bash
-pnpm dlx @tduo1404pty1802/vtit-backend-agent-harness init
+pnpm dlx @duongchau/vtit-backend-agent-harness init
 ```
 
 The CLI copies `AGENTS.md`, `docs/`, `agent-store/`, and `plugins/` into the target project.
@@ -107,7 +107,7 @@ Option B is more professional, but it requires a small Node CLI and careful over
 
 ## Publish Checklist
 
-- [x] Decide initial package name: `@tduo1404pty1802/vtit-backend-agent-harness`.
+- [x] Decide initial package name: `@duongchau/vtit-backend-agent-harness`.
 - [x] Add `LICENSE`.
 - [x] Add root `README.md` for npm users.
 - [x] Add `package.json`.
@@ -117,7 +117,7 @@ Option B is more professional, but it requires a small Node CLI and careful over
 - [x] Run `pnpm pack --dry-run`.
 - [x] Test local install from packed tarball.
 - [ ] Decide public npm registry vs GitHub Packages.
-- [ ] Confirm npm account owns or can publish under scope `@tduo1404pty1802`.
+- [ ] Confirm npm account owns or can publish under scope `@duongchau`.
 - [ ] Login with `npm login` or `pnpm login`.
 - [ ] Publish scoped public package with `pnpm publish --access public` if using npmjs.com.
 
