@@ -15,9 +15,9 @@ Usage:
   vtit-harness help
 
 Examples:
-  npx @tduo1404pty1802/vtit-backend-agent-harness init
-  npx @tduo1404pty1802/vtit-backend-agent-harness init ./my-project
-  npx @tduo1404pty1802/vtit-backend-agent-harness init . --force
+  npx @duongchau/vtit-backend-agent-harness init
+  npx @duongchau/vtit-backend-agent-harness init ./my-project
+  npx @duongchau/vtit-backend-agent-harness init . --force
 `);
 }
 
@@ -83,4 +83,3 @@ try {
   console.error(`vtit-harness: ${error.message}`);
   process.exitCode = 1;
 }
-
