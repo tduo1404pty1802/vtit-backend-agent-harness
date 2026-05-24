@@ -1,6 +1,6 @@
 {
   "name": "@duongchau/vtit-backend-agent-harness",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AI-agent harness and documentation for the VTIT Spring Boot backend project.",
   "license": "MIT",
   "author": "VTIT project owner",
