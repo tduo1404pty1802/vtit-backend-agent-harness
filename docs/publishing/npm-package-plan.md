@@ -1,10 +1,10 @@
 # NPM Package Distribution Plan
 
-This document records the npm packaging setup. Do not publish until the owner logs in to npm and approves the package name, license, and registry.
+This document records the pnpm/npm packaging setup. Do not publish until the owner logs in to npm and approves the package name, license, and registry.
 
 ## Goal
 
-Package this VTIT AI-agent documentation/harness so another project can install it with npm and copy or reference the docs/plugin store.
+Package this VTIT AI-agent documentation/harness so another project can install it with npm/pnpm and copy or reference the docs/plugin store.
 
 ## Recommended Package Shape
 
@@ -83,10 +83,22 @@ npm install @tduo1404pty1802/vtit-backend-agent-harness
 
 Then users copy docs from `node_modules`.
 
+pnpm equivalent:
+
+```bash
+pnpm add @tduo1404pty1802/vtit-backend-agent-harness
+```
+
 ### Option B - CLI Copy Command
 
 ```bash
 npx @tduo1404pty1802/vtit-backend-agent-harness init
+```
+
+pnpm equivalent:
+
+```bash
+pnpm dlx @tduo1404pty1802/vtit-backend-agent-harness init
 ```
 
 The CLI copies `AGENTS.md`, `docs/`, `agent-store/`, and `plugins/` into the target project.
@@ -102,12 +114,12 @@ Option B is more professional, but it requires a small Node CLI and careful over
 - [x] Add `bin/vtit-harness.js` CLI.
 - [x] Exclude `docs/discussion_about_the_project.md` from package contents.
 - [x] Exclude `docs_other_projects_for _reference_only/` from package contents.
-- [x] Run `npm pack --dry-run`.
+- [x] Run `pnpm pack --dry-run`.
 - [x] Test local install from packed tarball.
 - [ ] Decide public npm registry vs GitHub Packages.
 - [ ] Confirm npm account owns or can publish under scope `@tduo1404pty1802`.
-- [ ] Login with `npm login`.
-- [ ] Publish scoped public package with `npm publish --access public` if using npmjs.com.
+- [ ] Login with `npm login` or `pnpm login`.
+- [ ] Publish scoped public package with `pnpm publish --access public` if using npmjs.com.
 
 ## Sources
 
